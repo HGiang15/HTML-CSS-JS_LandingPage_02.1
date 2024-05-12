@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #1EBFC1;
+    --white-color: #FFF;
+    --black-color: #000;
+    --head-color: #0D1111;
+    --desc-color: #767E7E;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -17,3 +25,126 @@ body {
 }
 
 /* =============== Common =============== */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 186px;
+    padding: 0 16px;
+    line-height: 68px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--white-color);
+    background: #1EBFC1;
+    border-radius: 14px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    font-weight: 700;
+    color: var(--head-color);
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading.lv2 {
+    font-size: 4.2rem;
+    line-height: 1.33;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* =============== Header =============== */
+.header {
+    background: var(--white-color);
+}
+
+.header.fixed {
+    position: sticky;
+    top: -44px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 52px 0 8px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    padding: 8px 20px;
+    font-size: 1.6rem;
+    color: #2F3A3B;
+}
+
+.header .action-link:hover,
+.nav a:hover,
+.nav li.active a {
+    color: #2F3A3B;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .action-link {
+    font-size: 1.6rem;
+    color: #494949;
+}
+
+.header .sign-up-btn {
+    min-width: 108px;
+    margin-left: 24px;
+    font-size: 1.6rem;
+    line-height: 48px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--white-color);
+}
+
+.header .sign-up-btn:hover {
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+
+/* =============== Hero =============== */
+.hero {
+    padding: 42px 0 79px;
+}
