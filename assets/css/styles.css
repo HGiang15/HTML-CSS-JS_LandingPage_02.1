@@ -41,7 +41,7 @@ body {
     font-size: 1.8rem;
     text-align: center;
     color: var(--white-color);
-    background: #1EBFC1;
+    background: var(--primary-color);
     border-radius: 14px;
 }
 
@@ -147,4 +147,164 @@ a {
 /* =============== Hero =============== */
 .hero {
     padding: 42px 0 79px;
+}
+
+.hero .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hero left */
+.hero .content-block {
+    width: 46%;
+    padding: 93px 71px 0 0;
+}
+
+.hero .content-block .label {
+    font-size: 1.4rem;
+    color: var(--desc-color);
+}
+
+.hero .content-block .heading {
+    margin-top: 18px;
+}
+
+.hero .content-block .desc {
+    margin-top: 46px;
+    max-width: 374px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #9DA6A5;
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero .watch-video {
+    display: flex;
+    margin-left: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: var(--white-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+/* Hero right */
+.hero .meadia-block {
+    position: relative;
+    width: 54%;
+    display: flex;
+    margin-left: auto;
+}
+
+.hero .meadia-block .img-hero {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.hero .meadia-block .courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 149px;
+    left: 12px;
+    padding: 18px 25px;
+    width: 157px;
+    height: 75px;
+    border-radius: 18px;
+    background: #FEFEFD;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .courses .img-book {
+    margin-right: 16px;
+}
+
+.hero .courses .title {
+    color: var(--head-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero .meadia-block .schedules {
+    position: absolute;
+    bottom: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 124px;
+    height: 132px;
+    padding: 16px 25px 23px;
+    border-radius: 24px;
+    background: var(--white-color);
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .schedules .title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--head-color);
+}
+
+.hero .meadia-block .avatar-block {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    width: 207px;
+    height: 90px;
+    padding: 17px 35px;
+    background: #FEFEFD;
+    border-radius: 24px;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .avatar-block .title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--head-color);
+}
+
+.hero .avatar-block .avatar-group {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero .avatar-group .avatar:first-child {
+    margin-left: 0;
+}
+
+.hero .avatar-group .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    margin-left: -8px;
+    border-radius: 50%;
+    /* avatar default */
+    background-color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--white-color);
 }
