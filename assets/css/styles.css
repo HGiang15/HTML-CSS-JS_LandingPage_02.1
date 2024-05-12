@@ -308,3 +308,54 @@ a {
     font-size: 1rem;
     color: var(--white-color);
 }
+
+/* =============== Features =============== */
+.features {
+    margin-top: 130px;
+}
+
+.features .sub-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: var(--desc-color);
+}
+
+.features .feature-top {
+    width: 591px;
+}
+
+.features .feature-top .heading {
+    margin: 18px 0;
+}
+
+.features .feature-top .desc {
+    font-size: 1.8rem;
+    line-height: normal;
+    color: var(--desc-color);
+}
+
+.features .feature-list {
+    display: flex;
+    gap: 200px;
+    margin-top: 80px;
+}
+
+.features .feature-item {
+    max-width: 224px;
+}
+
+.feature-item .title {
+    margin: 26px 0 16px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--head-color);
+}
+
+.feature-item .desc {
+    color: #9DA6A5;
+    font-size: 1.6rem;
+    line-height: 1.69;
+}
