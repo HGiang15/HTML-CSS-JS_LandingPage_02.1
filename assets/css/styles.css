@@ -459,3 +459,150 @@ a {
     background: #1EBFC1;
     border-radius: 50%;
 }
+
+/* =============== Quantity =============== */
+.quantity {
+    padding: 200px 0 65px;
+}
+
+.quantity .row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.quantity .qty-desc {
+    font-size: 1.8rem;
+    line-height: normal;
+    color: var(--desc-color);
+}
+
+/* =============== Feedback =============== */
+.feedback {
+    padding: 199px 0 130px;
+}
+
+.feedback .body {
+    display: flex;
+    justify-content: space-between;
+    height: 481px;
+}
+
+.feedback .feedback-content {
+    width: 36%;
+}
+
+.feedback .feedback-content .open-quote {
+    margin-top: 37px;
+}
+
+.feedback blockquote {
+    margin-top: 27px;
+    font-size: 3.2rem;
+    line-height: 1.5;
+    color: #5D6564;
+}
+
+.feedback .user-name {
+    margin: 33px 0 52px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #070707;
+}
+
+.feedback .user-name strong {
+    color: var(--desc-color);
+    font-size: 1.6rem;
+}
+
+.feedback .control {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 37px;
+}
+
+.feedback .btn-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    background: transparent;
+}
+
+.feedback .btn-control:hover {
+    color: var(--white-color);
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.feedback .feedback-user {
+    position: relative;
+    width: 58%;
+}
+
+.feedback-user .avatar {
+    width: 92px;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-user img:nth-child(1) {
+    position: absolute;
+    width: 235px;
+    height: 235px;
+    top: 107px;
+    right: 171px;
+}
+
+.feedback-user img:nth-child(1) {
+    position: absolute;
+    width: 235px;
+    height: 235px;
+    top: 107px;
+    right: 171px;
+}
+
+.feedback-user img:nth-child(2) {
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    top: 0;
+    right: 443px;
+}
+
+.feedback-user img:nth-child(3) {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    top: 258px;
+    left: 0;
+}
+
+.feedback-user img:nth-child(4) {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    left: 212px;
+    bottom: 0;
+}
+
+.feedback-user img:nth-child(5) {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    right: 32px;
+    bottom: 29px;
+}
+
+.feedback-user img:nth-child(6) {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 19px;
+    right: 0;
+}
