@@ -69,6 +69,10 @@ a {
     line-height: 1.33;
 }
 
+.heading.lv3 {
+    font-size: 2.2rem;
+}
+
 .line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
@@ -358,4 +362,100 @@ a {
     color: #9DA6A5;
     font-size: 1.6rem;
     line-height: 1.69;
+}
+
+/* =============== Popular Courses =============== */
+.courses {
+    padding: 130px 0 65px;
+}
+
+.courses .course-top .sub-title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: var(--desc-color);
+}
+
+.courses .course-top .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses .course-top .info .desc {
+    max-width: 525px;
+    margin-top: 19px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: var(--desc-color);
+}
+
+.courses .course-top .view-all {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+}
+
+.courses .course-list {
+    display: flex;
+    margin-top: 79px;
+    gap: 47px;
+}
+
+.courses .course-item {
+    position: relative;
+    width: 33.33%;
+}
+
+.courses .course-item .thumb {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.65;
+}
+
+.courses .course-item .info {
+    position: absolute;
+    top: 322px;
+    left: 17px;
+    padding: 25px 25px 29px;
+    width: 325px;
+    border-radius: 8px;
+    background: var(--white-color);
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses .course-item .price {
+    margin: 16px 0 10px;
+    color: #767E7E;
+    font-size: 1.6rem;
+}
+
+.courses .course-item .desc {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9DA6A5;
+}
+
+.courses .course-item .stat {
+    display: flex;
+    margin-top: 18px;
+    gap: 26px;
+}
+
+.courses .course-item .stat .desc::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    bottom: 2px;
+    width: 6px;
+    height: 6px;
+    background: #1EBFC1;
+    border-radius: 50%;
 }
