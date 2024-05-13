@@ -606,3 +606,24 @@ a {
     top: 19px;
     right: 0;
 }
+
+/* =============== Admit =============== */
+.admit {
+    background: #DEF6F5;
+    padding: 76px 0 88px;
+}
+
+.admit .body {
+    display: flex;
+    gap: 410px;
+}
+
+.admit .info .heading {
+    margin-bottom: 18px;
+}
+
+.admit .info .desc {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--desc-color);
+}
