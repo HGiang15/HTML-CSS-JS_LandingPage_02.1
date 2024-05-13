@@ -1,4 +1,4 @@
-## Project 02.1 - Besnik-Course.
+## Project 02.1 - Besnik-Course. (Landing Page Basic)
 
 - Language: HTML/CSS
 - Javascript: (Update coming soon...)
