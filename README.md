@@ -4,7 +4,7 @@ Welcome to **Project 02.1 - Besnik-Course**, a beautifully crafted landing page 
 
 ## 🚀 Live Demo
 
-Experience the live demo [here](https://hgiang15.github.io/HTML-CSS_LandingPage_02.1/).
+Experience the live demo [here](https://hgiang15.github.io/HTML-CSS-JS_LandingPage_02.1/).
 
 ## ✨ Features
 
