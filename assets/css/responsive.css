@@ -20,6 +20,15 @@
 /* Tablet & Mobile */
 @media screen and (max-width: 991.98px) {
 
+    /* Common */
+    .features .feature-top,
+    .courses .course-top {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
     /* Heading */
     .heading.lv1 {
         font-size: 4.6rem;
@@ -141,13 +150,6 @@
         padding: 80px 0 0;
     }
 
-    .features .feature-top {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
     .features .feature-top .desc,
     .courses .course-top .info .desc {
         font-size: 1.6rem;
@@ -159,13 +161,6 @@
     }
 
     /* Course */
-    .courses .course-top {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
     .courses .course-top .info {
         flex-direction: column;
     }
