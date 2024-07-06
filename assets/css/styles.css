@@ -55,7 +55,7 @@ a {
 }
 
 .heading {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--head-color);
 }
 
@@ -110,19 +110,19 @@ a {
     padding: 52px 0 8px;
 }
 
-.nav ul {
+.navbar ul {
     display: flex;
 }
 
-.nav a {
+.navbar a {
     padding: 8px 20px;
     font-size: 1.6rem;
     color: #2F3A3B;
 }
 
 .header .action-link:hover,
-.nav a:hover,
-.nav li.active a {
+.navbar a:hover,
+.navbar li.active a {
     color: #2F3A3B;
     text-shadow: 1px 0 0 currentColor;
 }
@@ -207,14 +207,14 @@ a {
 }
 
 /* Hero right */
-.hero .meadia-block {
+.hero .media-block {
     position: relative;
     width: 54%;
     display: flex;
     margin-left: auto;
 }
 
-.hero .meadia-block .img-hero {
+.hero .media-block .img-hero {
     width: 576px;
     height: 631px;
     object-fit: cover;
@@ -222,7 +222,7 @@ a {
     margin-left: auto;
 }
 
-.hero .meadia-block .courses {
+.hero .media-block .courses {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,7 +248,7 @@ a {
     line-height: 1.5;
 }
 
-.hero .meadia-block .schedules {
+.hero .media-block .schedules {
     position: absolute;
     bottom: 46px;
     display: flex;
@@ -270,7 +270,7 @@ a {
     color: var(--head-color);
 }
 
-.hero .meadia-block .avatar-block {
+.hero .media-block .avatar-block {
     position: absolute;
     bottom: 41px;
     right: 45px;
@@ -315,7 +315,7 @@ a {
 
 /* =============== Features =============== */
 .features {
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 .features .sub-title {

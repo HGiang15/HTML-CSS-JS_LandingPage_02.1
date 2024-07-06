@@ -32,39 +32,42 @@
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
 
     <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
+    <!-- PC Header -->
     <header class="header fixed">
-        <div class="main-content">
+        <div class="container">
             <div class="body">
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+
                 <!-- Logo -->
                 <a href="./index.html"><img src="./assets/img/logo.svg" alt="Besnik." class="logo"></a>
 
                 <!-- Nav -->
-                <nav class="nav">
-                    <ul>
-                        <li class="active">
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a href="#pricing">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                <nav class="navbar">
+                    <ul id="pc-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="show-on-mobile separate"><a href="./login.html">Sign in</a></li>
+                        <li class="show-on-mobile"><a href="./signup.html">Sign up</a></li>
                     </ul>
                 </nav>
 
                 <!-- Action -->
-                <div class="action">
+                <div class="actions">
                     <a href="./login.html" class="action-link">Sign in</a>
                     <a href="./signup.html" class="btn sign-up-btn">Sign up</a>
                 </div>
@@ -72,10 +75,28 @@
         </div>
     </header>
 
+    <!-- Tablet/mobile header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="./index.html"><img src="./assets/img/logo.svg" alt="Lesson."></a>
+
+            <!-- Nav -->
+            <ul id="mobile-nav"></ul>
+
+        </div>
+    </header>
+
     <main>
         <!-- Hero -->
         <div class="hero">
-            <div class="main-content">
+            <div class="container">
                 <div class="body">
                     <!-- Hero left -->
                     <div class="content-block">
@@ -97,9 +118,8 @@
                     </div>
 
                     <!-- Hero right -->
-                    <div class="meadia-block">
-                        <div class="img-hero"><img class="img-hero" src="./assets/img/hero-img2.jpg"
-                                alt="Words learner come here."></div>
+                    <div class="media-block">
+                        <img class="img-hero" src="./assets/img/hero-img2.jpg" alt="Words learner come here.">
 
                         <!-- courses -->
                         <div class="courses">
@@ -137,7 +157,7 @@
 
         <!-- Features -->
         <div id="features" class="features">
-            <div class="main-content">
+            <div class="container">
                 <div class="feature-top">
                     <p class="sub-title">FEATURES</p>
                     <h2 class="heading lv2">We are providing suitable features for students.</h2>
@@ -175,7 +195,7 @@
 
         <!-- Popular Courses -->
         <div id="pricing" class="courses">
-            <div class="main-content">
+            <div class="container">
                 <div class="course-top">
                     <p class="sub-title">COURSES</p>
                     <h2 class="heading lv2">Popular Courses</h2>
@@ -244,7 +264,7 @@
 
         <!-- Quantity -->
         <div class="quantity">
-            <div class="main-content">
+            <div class="container">
                 <div class="row">
                     <div class="qty-item">
                         <strong class="qty heading lv1">100+</strong>
@@ -266,7 +286,7 @@
 
         <!-- Feedback -->
         <div id="about" class="feedback">
-            <div class="main-content">
+            <div class="container">
                 <div class="body">
                     <div class="feedback-content">
                         <img src="./assets/icons/quotes.svg" alt="quotes" class="open-quote">
@@ -308,7 +328,7 @@
 
         <!-- Admit -->
         <div id="contact" class="admit">
-            <div class="main-content">
+            <div class="container">
                 <div class="body">
                     <div class="info">
                         <h2 class="heading lv2">Ready to Get Admit</h2>
@@ -322,9 +342,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="main-content">
+        <div class="container">
             <div class="row">
-                <a href="#!" class="logo"><img src="./assets/img/logo.svg" alt=""></a>
+                <div class="column">
+                    <a href="#!" class="logo footer__logo"><img src="./assets/img/logo.svg" alt=""></a>
+                </div>
 
                 <!-- Column 1 -->
                 <div class="column">
@@ -403,6 +425,10 @@
                             <a target="_blank" href="https://www.linkedin.com/">Linkedin</a>
                         </li>
                     </ul>
+                </div>
+
+                <div class="column show-on-tablet-mobile">
+                    <a href="#!" class="logo footer__logo"><img src="./assets/img/logo.svg" alt=""></a>
                 </div>
             </div>
 
