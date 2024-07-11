@@ -118,6 +118,10 @@
         border-top: 1.5px solid #ebebeb;
     }
 
+    .actions {
+        margin-left: auto;
+    }
+
     /* Hero */
     .hero .body {
         flex-direction: column;
@@ -321,7 +325,7 @@
         display: none;
     }
 
-    .bell{
+    .bell {
         display: block;
         width: 20px;
     }
