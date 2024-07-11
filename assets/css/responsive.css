@@ -321,6 +321,11 @@
         display: none;
     }
 
+    .bell{
+        display: block;
+        width: 20px;
+    }
+
     /* Hero */
     .hero .content-block .desc {
         font-size: 1.4rem;
